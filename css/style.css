@@ -152,7 +152,7 @@ header {
 
 /* main-visiual start */
 #main-visual {
-    background-image: url(./cheese_main_img.jpg);
+    background-image: url(../cheese_main_img.jpg);
      /* 背景に画像の挿入 */
     background-color: rgba(66, 55, 16, 0.5);
     /* 背景色の選定 */
@@ -218,7 +218,7 @@ header {
 /* about start */
 #about {
     width:100%;
-    background-image: url(./cheese_about_img.jpg);
+    background-image: url(../cheese_about_img.jpg);
     background-size: cover;
     background-color:rgba(31, 12, 12, 0.7); /* 背景色の選定 */
     background-blend-mode: darken;
