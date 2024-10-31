@@ -1,0 +1,813 @@
+
+body {
+    background-color: rgb(248, 247, 245);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* header start */
+header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(223, 220, 220);
+    background-color: rgba(41, 38, 38, 0.26);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 99999;
+
+    @media screen and (max-width:759px) {
+        header {
+            height: 60%;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        header {
+            height: 40%;
+        }
+    }
+
+    .school-name {
+        display: flex;
+        justify-content: center;
+        height: 70%;
+        width: 25%;
+        margin: 0;
+        margin-left: 10px;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        top: 15px;
+    }
+
+    @media screen and (max-width:759px) {
+        .school-name {
+            width: 30%;
+            height: 40%;
+        }
+    }
+
+     @media screen and (max-width:480px) {
+        .school-name {
+            width: 15%;
+            height: 20%;
+        }
+    }
+
+    .logo {
+        color: black;
+        font-size: 60px;
+        font-family: serif;/* フォント種類を選択  */
+        margin:0;
+    }
+
+    /* 959px以下に適用されるCSS（タブレット用） */
+    @media screen and (max-width:759px) {
+        .logo{
+            font-size: 40px;
+        }
+    }
+
+    /*480px以下に適用されるCSS（スマホ用）  */
+    @media screen and (max-width:480px) {
+        .logo {
+            font-size: 20px;
+        }
+        
+    }
+
+    .title {
+        color: black;
+        font-size: 30px;
+        font-family: serif;
+        margin-left: 25px;
+    }
+
+    @media screen and (max-width:759px) {
+        .title {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .title {
+            font-size: 10px;
+        }
+    }
+
+    nav {
+        height: 100%;
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            li {
+                height: 100%;
+                a {
+                    padding: 0 20px;
+                    margin: 0 10px;
+                    border-radius: 15px;
+                    height: 70%;
+                    display: flex;
+                    align-items: center;
+                    color:black;
+                    font-size: 25px;
+                    font-weight: 900;
+                    background-color: whitesmoke;
+                    
+                    &:hover{
+                        background-color:rgba(62, 59, 59, 0.797);
+                        color: whitesmoke;
+                        height: 70%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:759px) {
+        nav ul li a {
+            font-size: 10px;
+            width: 40%;
+            height: 40%;
+            text-align: center;
+        } 
+    }
+    @media screen and (max-width:480px) {
+        nav ul li a {
+            font-size: 5px;
+            width: 20%;
+            height: 20%;
+            text-align: center;
+        }
+    }
+}
+/* header end */
+
+/* main-visiual start */
+#main-visual {
+    background-image: url(/cheese_main_img.jpg);
+     /* 背景に画像の挿入 */
+    background-color: rgba(66, 55, 16, 0.5);
+    /* 背景色の選定 */
+    background-blend-mode:lighten;
+    /* 背景画像の合成の種類を決める  */
+    background-size: cover;
+    /* 画像で背景を覆う時に使用 */
+    padding-top: 450px;
+    padding-bottom: 450px;
+    font-weight: 800;
+    h2 {
+        text-align: center;
+        font-size: 80px;
+        font-family: serif;
+        font-weight: 800;
+        color: black;
+        letter-spacing: 10px;
+        /* 文字間隔を空ける */
+    }
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: serif;
+        font-weight: 800;
+        color: black;
+        letter-spacing: 10px;
+    }
+
+    @media screen and (max-width:759px) {
+        #main-visual {
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+        h2 {
+        font-size: 50px; 
+        letter-spacing: 5px;
+        }
+        h3 {
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        #main-visual {
+            padding-top: 180px;
+            padding-bottom: 180px;
+        }
+
+        h2 {
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        h3 {
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+    }
+}
+/* main-visiual end */
+
+/* about start */
+#about {
+    width:100%;
+    background-image: url(/cheese_about_img.jpg);
+    background-size: cover;
+    background-color:rgba(31, 12, 12, 0.7); /* 背景色の選定 */
+    background-blend-mode: darken;
+    padding-top: 420px;
+    padding-bottom: 420px;
+    .about-1 {
+        display:block;
+        justify-content:left;
+        box-sizing: border-box;
+     }
+    h2 {
+        color:whitesmoke;
+        text-decoration: underline; /* テキストにアンダーラインを引く */
+        font-size: 60px;
+        text-align: left; /* テキストの中央揃え */
+        font-family: serif;
+        font-weight: 900;
+        padding-left: 70px;
+    }
+    p {
+        color:whitesmoke;
+        text-align: left;
+        font-size: 40px;
+        font-family: serif;
+        font-weight: 100;
+        padding-left: 70px;
+    }
+
+    @media screen and (max-width:759px) {
+        #about {
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font: 20px;
+        }    
+    }
+
+    @media screen and (max-width:480px) {
+        #about {
+            padding-top: 180px;
+            padding-bottom: 180px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font: 10px;
+        }
+    }
+}
+/* about end */
+
+/* course start */
+#course {
+    width: 100%;
+    padding-top: 350px;
+    padding-bottom: 400px;
+    h2 {
+        color: black;
+        text-decoration: underline;
+        font-size: 60px;
+        text-align: center;
+        font-family: serif;
+        font-weight: 1000;
+    }
+    #sub {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-family: serif;
+        font-weight: 800;
+        padding-bottom: 100px;
+    }
+}
+        @media screen and (max-width: 759px) {
+            #course {
+                width: 100%;
+            }
+        }
+    
+        @media screen and(max-width: 480px) {
+            #course {
+                width: 100%;
+            }
+        }
+.box-1 {
+    display: flex;
+    flex: 1;
+    margin: 20px 80px;
+}
+
+    @media screen and (max-width: 759px){
+        .box-1{
+            flex-direction: column-reverse;
+            margin: 0px 20px 0px 50px;
+        }
+    }
+    
+    @media screen and(max-width: 480px) {
+        .box-1 {
+
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+    }
+
+
+.text-1 {
+    width: 80%;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width:759px) {
+    .text-1 {
+        margin: 0;
+    }
+}
+
+.text-1 h3 {
+    font-size: 40px;
+}
+    @media screen and (max-width:759px) {
+        .text-1 h3 {
+            font-size: 25px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .text-1 h3 {
+            font-size: 15px;
+        }
+    }
+    
+.text-1 p {
+    font-size: 30px;
+}
+    @media screen and (max-width:759px) {
+        .text-1 p {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .text-1 p {
+            font-size: 10px;
+        }
+    }
+
+
+.img-1 {
+    margin-left: 30px;
+    filter: drop-shadow(0px 0px 5px rgba(22, 1, 1, 0.8));
+}
+@media screen and (max-width:759px) {
+    .img-1 {
+        margin: 0;
+        width: 30px;
+    }
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    margin: 20px 80px;
+} 
+    
+    @media screen and (max-width: 759px) {
+        .box-2 {
+            flex-direction: column-reverse;
+            margin: 0px 20px 0px 50px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .box-2 {
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+    }
+
+
+.text-2 {
+    width: 80%;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+@media screen and (max-width:759px) {
+    .text-2 {
+        margin: 0;
+    }
+}
+.text-2 h3 {
+    font-size: 40px;
+}
+    @media screen and (max-width:759px) {
+        .text-2 h3 {
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .text-2 h3 {
+            font-size: 15px;
+        }
+    }
+
+
+.text-2 p {
+    font-size: 30px;
+}
+    @media screen and (max-width:759px) {
+        .text-2 p {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .text-2 p {
+            font-size: 10px;
+        }
+    }
+
+
+.img-2 {
+    margin-left: 30px;
+    filter: drop-shadow(0px 0px 5px rgba(22, 1, 1, 0.8));
+}
+@media screen and (max-width:759px) {
+    .img-2 {
+        margin: 0;
+        width: 30px;
+    }
+}
+.box-3 {
+    display: flex;
+    flex: 1;
+    margin: 20px 80px;
+}
+    @media screen and (max-width: 759px) {
+        .box-3 {
+            margin: 0px 20px 0px 50px;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    @media screen and(max-width: 480px) {
+        .box-3 {
+            margin: 0px 20px 0px 20px;
+            flex-direction: column-reverse;
+        }
+    }
+
+.text-3 {
+    width: 80%;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+@media screen and (max-width:759px) {
+    .text-3 {
+        margin: 0;
+    }
+}
+.text-3 h3 {
+    font-size: 40px;
+}
+    @media screen and (max-width:759px) {
+        .text-3 h3 {
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .text-3 h3 {
+            font-size: 15px;
+        }
+    }
+
+
+.text-3 p {
+    font-size: 30px;
+}
+    @media screen and (max-width:759px) {
+        .text-3 p {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .text-3 p {
+            font-size: 10px;
+        }
+    }
+
+
+.img-3 {
+    margin-left: 30px;
+    filter: drop-shadow(0px 0px 5px rgba(22, 1, 1, 0.8));
+}
+@media screen and (max-width:759px) {
+    .img-3 {
+        margin: 0;
+        width: 30px;
+    }
+}
+#news {
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-color: rgb(250, 238, 204);
+    h2 {
+        color: black;
+        text-decoration: underline;
+        font-size: 60px;
+        font-family: serif;
+        text-align: center;
+    }
+    @media screen and (max-width:759px) {
+        h2 {
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        h2 {
+            font-size: 20px;
+        }
+    }
+    p {
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+    @media screen and (max-width:759px) {
+        p {
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        p {
+            font-size: 5px;
+        }
+    }
+}
+
+.scroll {
+    height: 500px;
+    width: 50%;
+    border: 0.5px solid #000;
+    overflow-y: scroll; /* スクロールバーの表示 */
+    background-color: rgb(239, 245, 249);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 25%;
+}
+
+#access {
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    h2 {
+        color: black;
+        text-decoration: underline;
+        font-size: 60px;
+        font-family: serif;
+        text-align: center;
+    }
+    @media screen and (max-width:759px) {
+        h2 {
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+.access-detail {
+    display: flex;
+}
+
+    @media screen and (max-width:759px)  {
+        .access-detail {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .access-detail {
+            flex-direction: column;
+        }
+    }
+
+.information {
+    color: black;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 120px;
+}
+    @media screen and (max-width:759px) {
+        .information {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .information {
+            font-size: 10px;
+        }
+    }
+
+iframe {
+    display: flex;
+    justify-content: right;
+    width: 1200px;
+    height: 800px;
+    padding-left: 100px;
+}
+
+    @media screen and (max-width:759px) {
+        iframe {
+            width: 500px;
+            height: 400px;
+            padding-top: 300px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        iframe {
+            width: 300px;
+            height: 100px;
+            padding-top: 200px;
+        }
+    }
+
+#contact {
+    width: 100%;
+    background-color: rgb(221, 222, 223);
+    padding-bottom: 30px;
+    h2 {
+        color: black;
+        text-decoration: underline;
+        font-size: 60px;
+        font-family: serif;
+        text-align: center;
+        padding-top: 20px;
+    }
+    @media screen and (max-width:759px) {
+        h2 {
+            font-size: 30px;
+            padding-top: 10px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        h2 {
+            font-size: 15px;
+            padding-top: 5px;
+        }
+    }
+}
+
+.explane {
+    font-size: 25px;
+    text-align: center;
+    @media screen and (max-width:759px) {
+        .explane {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .explane {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.notion {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    @media screen and (max-width:759px) {
+        .notion{
+            font-size: 15px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        .notion {
+            font-size: 10px;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+#form {
+    text-align: center;
+    background-color: rgb(248, 192, 88);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    filter: drop-shadow(0px 0px 5px rgba(22, 1, 1, 0.8));
+    h3 {
+        font-size: 25px;
+    }
+    @media screen and (max-width:759px) {
+        h3 {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        h3 {
+            font-size: 10px;
+        }
+    }
+}
+
+.text {
+    width:60%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.text-other {
+    width: 60%;
+    height: 250px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 20px;
+}
+
+#work {
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.trigger {
+    display: block;
+}
+
+.trigger span {
+    font-size: 20px;
+}
+
+#motivation {
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.button {
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(249, 106, 17);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+footer {
+    color: rgb(223, 220, 220);
+    background-color: rgb(46, 45, 45);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    @media screen and (max-width:759px) {
+        footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    @media screen and (max-width:480px) {
+        footer {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+}
